@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconDataImageView"
+        android:layout_width="27dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="@dimen/padding_margin_double"
+        android:layout_marginLeft="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin_double"
+        android:src="@drawable/icon_baseline_equalizer"
+        android:tint="@color/critical_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/NMF.Styles.Text.BigBody.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_margin_double"
+        android:layout_marginRight="@dimen/padding_margin"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/iconDataImageView"
+        app:layout_constraintRight_toLeftOf="@+id/warningImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/warningImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_margin"
+        android:src="@drawable/icon_baseline_error"
+        android:tint="@color/warning_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+</android.support.constraint.ConstraintLayout>

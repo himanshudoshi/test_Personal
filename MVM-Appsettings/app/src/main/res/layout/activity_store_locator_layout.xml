@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/background_color"
+        tools:context=".ui.storeLocator.view.StoreLocatorActivity">
+
+        <include
+            android:id="@+id/topbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/top_bar_layout" />
+
+
+    <TextView
+        android:id="@+id/text_welcome_store_locator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/store_locator_welcome_text"
+        android:textColor="@color/dark_text_color"
+        app:layout_constraintTop_toBottomOf="@id/topbar"
+        />
+
+</android.support.constraint.ConstraintLayout>

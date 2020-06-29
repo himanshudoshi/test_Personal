@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="language_no_detected_en">
+      The MyBell app was designed to be viewed in English or French. Please select the appropriate language you wish to view the app in below.
+    </string>
+
+    <string name="language_no_detected_fr">
+        L\'application MonBell a été conçu pour être visionné en français ou en anglais.
+        Veuillez sélectionner la langue que vous souhaitez voir dans l\'application ci-dessous.
+    </string>
+
+    <string name="selectedLanguage">selectedLanguage</string>
+    <string name="deviceLanguage">deviceLanguage</string>
+    <string name="english">English</string>
+    <!--<string name="french">Francais</string>-->
+    <string name="french">Français</string>
+
+
+
+    <string-array name="languages">
+        <item>@string/english</item>
+        <item>@string/french</item>
+    </string-array>
+</resources>

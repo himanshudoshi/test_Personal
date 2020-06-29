@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E10A0A</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="divider">#D7D7D7</color>
+    <color name="background_color">#EAEAEA</color>
+    <color name="background_subtle_color">#F4F4F4</color>
+    <color name="black_opacity_20">#20111111</color>
+
+    <color name="critical_color">#BD2025</color>
+    <color name="warning_color">#E99E00</color>
+    <color name="success_color">#2C9E25</color>
+    <color name="link_color">#2390B9</color>
+
+    <color name="outline_border_line_color">#0075FF</color>
+    <color name="outline_text_color">#0075FF</color>
+
+    <!-- TEXT COLORS-->
+    <color name="default_text_color">#555555</color>
+    <color name="dark_text_color">#111111</color>
+    <color name="link_text_color">#0075FF</color>
+    <color name="bottom_nav_title_text_color">#5F86DB</color>
+
+    <!-- BOTTOM NAVIGATION VIEW -->
+    <color name="bottom_nav_background_color">@android:color/white</color>
+    <color name="bottom_nav_action_fab_tint_color">@android:color/white</color>
+    <color name="bottom_nav_selected_tint_color">#2390B9</color>
+    <color name="bottom_nav_unselected_tint_color">#555555</color>
+
+</resources>

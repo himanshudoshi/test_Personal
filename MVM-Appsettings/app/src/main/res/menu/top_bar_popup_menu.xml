@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <item
+                android:id="@+id/action_my_profile"
+                android:icon="@drawable/icon_username"
+                android:title="@string/my_profile"
+               />
+
+            <item
+                android:id="@+id/action_store_locator"
+                android:icon="@drawable/icon_store_locator"
+                android:title="@string/store_locator"
+                />
+
+            <item
+                android:id="@+id/action_settings"
+                android:title="@string/settings_and_privacy"
+                android:icon="@drawable/icon_settings"
+                />
+
+
+            <item
+                android:id="@+id/action_logout"
+                android:icon="@drawable/icon_log_out"
+                android:title=""
+                />
+
+
+
+</menu>

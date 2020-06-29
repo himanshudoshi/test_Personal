@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Native Mobile Framework UI</string>
+    <string name="phone_number">Number: %1$s</string>
+    <string name="sim_number">SIM: %1$s</string>
+    <string name="network_type">Network: %1$s</string>
+    <string name="price_dollar">&#36; %1$d</string>
+    <string name="expires_in">Expires in %1$d days</string>
+    <string name="due_by">Due by %1$s </string>
+    <string name="view_bill">View Bill</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="mobility_bill">Mobility Bill</string>
+
+</resources>

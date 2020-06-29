@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TEXT SIZES -->
+    <dimen name="default_text_size">14sp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_smallest">11sp</dimen>
+    <dimen name="text_size_medium">17sp</dimen>
+    <dimen name="branded_title1_text_size">28sp</dimen>
+    <dimen name="branded_title2_text_size">20sp</dimen>
+    <dimen name="branded_title3_text_size">16sp</dimen>
+    <dimen name="top_bar_text_size">28sp</dimen>
+
+    <!-- PADDINGS -->
+    <dimen name="padding_margin_half">4dp</dimen>
+    <dimen name="padding_margin">8dp</dimen>
+    <dimen name="padding_margin_double">16dp</dimen>
+    <dimen name="padding_margin_triple">24dp</dimen>
+    <dimen name="padding_margin_wide">32dp</dimen>
+    <dimen name="bottom_nav_action_fab_margin_default">72dp</dimen>
+    <dimen name="bottom_nav_action_fab_margin_medium">104dp</dimen>
+
+    <!-- ELEVATIONS -->
+    <dimen name="elevation">2dp</dimen>
+    <dimen name="elevation_double">4dp</dimen>
+    <dimen name="elevation_action_fab">8dp</dimen>
+    <dimen name="elevation_triple">6dp</dimen>
+
+    <!-- HEIGHTS -->
+    <dimen name="top_bar_min_height">100dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="expanded_bottom_nav_height">192dp</dimen>
+
+
+    <!-- SIZES -->
+    <dimen name="menu_button_size">40dp</dimen>
+    <dimen name="payment_carousel_checkbox_size">25dp</dimen>
+    <dimen name="image_size_medium">120dp</dimen>
+    <dimen name="bottom_nav_background_drawable_size">1000dp</dimen>
+    <dimen name="bottom_nav_radius">500dp</dimen>
+    <dimen name="action_fab_size">56dp</dimen>
+
+    <!-- BORDERS -->
+    <dimen name="border_width">1dp</dimen>
+
+    <!-- RADIUS -->
+    <dimen name="radius">2dp</dimen>
+    <dimen name="top_up_amount_background_radius">10dp</dimen>
+
+    <!-- MAX LINES -->
+    <dimen name="max_lines_default">3</dimen>
+    <dimen name="max_lines_minimized">2</dimen>
+
+    <!-- PERCENTAGE -->
+    <dimen name="bottom_nav_actions_left_gap">0.36</dimen>
+    <dimen name="bottom_nav_actions_right_gap">0.63</dimen>
+
+    <!-- SCALES -->
+    <dimen name="img_bottom_nav_scale">1.6</dimen>
+
+</resources>

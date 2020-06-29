@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/NMF.Styles.Text.BigBody.SemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin_triple"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/deviceImageView"
+        android:layout_width="@dimen/image_size_medium"
+        android:layout_height="@dimen/image_size_medium"
+        android:layout_marginLeft="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin"
+        android:scaleType="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/devicePrimaryDescriptionTextView"
+        style="@style/NMF.Styles.Text.BigBody.SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin"
+        android:textSize="@dimen/default_text_size"
+        app:layout_constraintLeft_toRightOf="@id/deviceImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <TextView
+        android:id="@+id/deviceSecondaryDescriptionTextView"
+        style="@style/NMF.Styles.Text.BodyCopy.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        app:layout_constraintLeft_toRightOf="@id/deviceImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/devicePrimaryDescriptionTextView" />
+
+    <TextView
+        android:id="@+id/phoneNumberDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin"
+        android:text="@string/phone_number"
+        app:layout_constraintLeft_toRightOf="@id/deviceImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deviceSecondaryDescriptionTextView" />
+
+    <TextView
+        android:id="@+id/simNumberDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:text="@string/sim_number"
+        app:layout_constraintLeft_toRightOf="@id/deviceImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberDescriptionTextView" />
+
+    <TextView
+        android:id="@+id/networkNumberDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:text="@string/network_type"
+        app:layout_constraintLeft_toRightOf="@id/deviceImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simNumberDescriptionTextView" />
+
+    <View
+        android:id="@+id/middleDividerView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/border_width"
+        android:layout_marginLeft="@dimen/padding_margin_double"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin_double"
+        android:background="@color/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deviceImageView" />
+
+    <ImageView
+        android:id="@+id/checkMarkSuccessImageView"
+        android:layout_width="@dimen/padding_margin_double"
+        android:layout_height="@dimen/padding_margin_double"
+        android:layout_below="@id/middleDividerView"
+        android:layout_marginLeft="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin_double"
+        android:scaleType="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middleDividerView" />
+
+    <TextView
+        android:id="@+id/primaryDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middleDividerView"
+        android:layout_marginLeft="@dimen/padding_margin"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:layout_toRightOf="@id/checkMarkSuccessImageView"
+        android:maxLines="@dimen/max_lines_default"
+        app:layout_constraintLeft_toRightOf="@+id/checkMarkSuccessImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkMarkSuccessImageView" />
+
+    <TextView
+        android:id="@+id/secondaryDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_margin"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin_double"
+        android:layout_toRightOf="@id/checkMarkSuccessImageView"
+        android:maxLines="@dimen/max_lines_minimized"
+        app:layout_constraintLeft_toRightOf="@+id/checkMarkSuccessImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primaryDescriptionTextView" />
+
+    <View
+        android:id="@+id/bottomDividerView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/border_width"
+        android:layout_marginTop="@dimen/padding_margin_wide"
+        android:background="@color/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondaryDescriptionTextView" />
+
+    <LinearLayout
+        android:id="@+id/containerButtonsLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_margin_double"
+        android:orientation="horizontal"
+        android:weightSum="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomDividerView">
+
+        <include
+            android:id="@+id/findStoreCustomDrawerButton"
+            layout="@layout/component_drawer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/tutorialsCustomDrawerButton"
+            layout="@layout/component_drawer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/addFeaturesCustomDrawerButton"
+            layout="@layout/component_drawer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

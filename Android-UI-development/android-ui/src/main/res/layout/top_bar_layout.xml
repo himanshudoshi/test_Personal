@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="@dimen/top_bar_min_height"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevation_double"
+
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+
+    android:id="@+id/topbar"
+    tools:menu="@menu/top_bar_overflow_menu">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/padding_margin">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftVerticalPaddingGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintGuide_begin="@dimen/padding_margin_double"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/rightVerticalPaddingGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintGuide_end="@dimen/padding_margin_double"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="@dimen/menu_button_size"
+            android:layout_height="@dimen/menu_button_size"
+
+            android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_left"
+            android:tint="@android:color/white"
+            android:visibility="gone"
+            android:paddingLeft="-20dp"
+
+
+            app:layout_constraintLeft_toRightOf="@id/leftVerticalPaddingGuide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/titleTextView"/>
+
+        <LinearLayout
+            android:id="@+id/menuOptionButtonsLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toTopOf="@id/homeButton"
+            app:layout_constraintRight_toLeftOf="@id/rightVerticalPaddingGuide">
+
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="@dimen/menu_button_size"
+                android:layout_height="@dimen/menu_button_size"
+
+                android:background="@android:color/transparent"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/dots_vertical"
+                android:tint="@android:color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_margin"
+
+            style="@style/NMF.Styles.Text.TopBar.Title"
+            android:text="@string/app_name"
+
+            app:layout_constraintLeft_toRightOf="@id/leftVerticalPaddingGuide"
+            app:layout_constraintRight_toRightOf="@+id/rightVerticalPaddingGuide"
+            app:layout_constraintTop_toBottomOf="@id/menuOptionButtonsLinearLayout"/>
+
+        <View
+            android:id="@+id/subtitleBackgroundView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/padding_margin_double"
+            android:visibility="gone"
+            android:background="@color/black_opacity_20"
+
+            app:layout_constraintTop_toBottomOf="@id/titleTextView"
+            app:layout_constraintBottom_toBottomOf="@id/subTitleTextView"
+            />
+
+        <TextView
+            android:id="@+id/subTitleTextView"
+            style="@style/NMF.Styles.Text.TopBar.SubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_margin"
+            android:text=""
+            android:visibility="gone"
+
+            app:layout_constraintTop_toTopOf="@id/subtitleBackgroundView"
+            app:layout_constraintLeft_toRightOf="@id/leftVerticalPaddingGuide" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.Toolbar>

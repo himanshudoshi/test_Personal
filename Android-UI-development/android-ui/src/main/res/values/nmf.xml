@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_type">@string/none_type</string>
+    <bool name="tablet">false</bool>
+
+    <!-- FONTS -->
+    <array name="mbm_fonts">
+        <item name="mbm_regular">mbm_regular.ttf</item>
+    </array>
+
+    <array name="virgin_fonts">
+        <item name="virgin_regular">virgin_regular.ttf</item>
+    </array>
+
+    <array name="pc_fonts">
+        <item name="pc_regular">pc_regular.ttf</item>
+    </array>
+
+    <array name="lucky_fonts">
+        <item name="lucky_regular">lucky_regular.ttf</item>
+        <item name="lucky_medium">lucky_medium.ttf</item>
+    </array>
+
+    <string name="none_type">none</string>
+    <string name="pc_mobile_app">Pc Mobile</string>
+    <string name="lucky_mobile_app">Lucky Mobile</string>
+    <string name="virgin_mobile_app">Virgin Mobile</string>
+    <string name="bell_mobile_app">Bell Mobile</string>
+
+</resources>

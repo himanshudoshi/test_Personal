@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@android:color/white"/>
+    <size android:height="@dimen/payment_carousel_checkbox_size"
+          android:width="@dimen/payment_carousel_checkbox_size"/>
+
+</shape>

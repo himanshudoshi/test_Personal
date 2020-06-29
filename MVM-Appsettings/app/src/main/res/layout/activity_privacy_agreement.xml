@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background_color"
+tools:context=".ui.settings.view.PrivacyAgreement">
+<include
+    android:id="@+id/topbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    layout="@layout/top_bar_layout" />
+
+
+<include
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout="@layout/content_privacy_agreement"
+    android:layout_below="@id/topbar"
+    android:layout_marginTop="@dimen/padding_margin_half" />
+
+</RelativeLayout>

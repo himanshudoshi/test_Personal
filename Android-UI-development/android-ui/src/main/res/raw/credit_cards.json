@@ -1,0 +1,25 @@
+{
+  "cards" : [
+
+    { "type" : "visa", // Credit card type
+      "viewId": 3401987, // This will be card view id
+      "background_resource": "graphic_visa_cc", //Drawable resource to define shape, background of your credit card
+      "card_number_length": "13-19", // Credit card number length, used while validation
+      "starts_with": ["4"] // Credit card number starting numbers, digits to be used for CC validation
+    },
+
+    { "type" : "mastercard",
+      "viewId": 3401988,
+      "background_resource": "graphic_mastercard_cc",
+      "card_number_length": "16",
+      "starts_with": ["5"]
+    },
+
+    { "type" : "american express",
+      "viewId": 3401989,
+      "background_resource": "graphic_amex_cc",
+      "card_number_length": "15",
+      "starts_with": ["34","37"]
+    }
+  ]
+}

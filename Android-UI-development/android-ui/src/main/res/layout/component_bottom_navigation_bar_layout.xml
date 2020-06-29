@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customBottomNavigationBar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <include layout="@layout/bottom_navigation_view" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/expandActionFAB"
+        android:layout_height="@dimen/action_fab_size"
+        android:layout_width="@dimen/action_fab_size"
+        style="@style/NMF.Styles.FloatingActionButton"
+        android:layout_marginBottom="@dimen/padding_margin"
+        android:src="@drawable/icon_plus"
+        app:elevation="@dimen/elevation_action_fab"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/action1FAB"
+        android:layout_height="@dimen/action_fab_size"
+        android:layout_width="@dimen/action_fab_size"
+        style="@style/NMF.Styles.FloatingActionButton"
+        android:layout_marginBottom="@dimen/bottom_nav_action_fab_margin_default"
+        android:layout_marginLeft="@dimen/padding_margin_double"
+        android:src="@drawable/icon_earth"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/action1TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        style="@style/NMF.Styles.Text.TitleFab"
+        android:layout_marginTop="@dimen/padding_margin"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/action1FAB"
+        app:layout_constraintRight_toRightOf="@id/action1FAB"
+        app:layout_constraintTop_toBottomOf="@id/action1FAB" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/action2FAB"
+        android:layout_height="@dimen/action_fab_size"
+        android:layout_width="@dimen/action_fab_size"
+        style="@style/NMF.Styles.FloatingActionButton"
+        android:layout_marginBottom="@dimen/bottom_nav_action_fab_margin_medium"
+        android:src="@drawable/icon_earth"
+        android:visibility="gone"
+        app:elevation="@dimen/elevation_action_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline3" />
+
+    <TextView
+        android:id="@+id/action2TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        style="@style/NMF.Styles.Text.TitleFab"
+        android:layout_marginTop="@dimen/padding_margin"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/action2FAB"
+        app:layout_constraintRight_toRightOf="@id/action2FAB"
+        app:layout_constraintTop_toBottomOf="@id/action2FAB" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/action3FAB"
+        android:layout_height="@dimen/action_fab_size"
+        android:layout_width="@dimen/action_fab_size"
+        style="@style/NMF.Styles.FloatingActionButton"
+        android:layout_marginBottom="@dimen/bottom_nav_action_fab_margin_medium"
+        android:src="@drawable/icon_earth"
+        android:visibility="gone"
+        app:elevation="@dimen/elevation_action_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline4"
+        app:layout_constraintRight_toRightOf="@id/guideline4" />
+
+    <TextView
+        android:id="@+id/action3TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        style="@style/NMF.Styles.Text.TitleFab"
+        android:layout_marginTop="@dimen/padding_margin"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/action3FAB"
+        app:layout_constraintRight_toRightOf="@id/action3FAB"
+        app:layout_constraintTop_toBottomOf="@id/action3FAB" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/action4FAB"
+        android:layout_height="@dimen/action_fab_size"
+        android:layout_width="@dimen/action_fab_size"
+        style="@style/NMF.Styles.FloatingActionButton"
+        android:layout_marginBottom="@dimen/bottom_nav_action_fab_margin_default"
+        android:layout_marginRight="@dimen/padding_margin_double"
+        android:src="@drawable/icon_earth"
+        android:visibility="gone"
+        app:elevation="@dimen/elevation_action_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/action4TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        style="@style/NMF.Styles.Text.TitleFab"
+        android:layout_marginTop="@dimen/padding_margin"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/action4FAB"
+        app:layout_constraintRight_toRightOf="@id/action4FAB"
+        app:layout_constraintTop_toBottomOf="@id/action4FAB" />
+
+    <ImageView
+        android:id="@+id/revealShapeImageView"
+        android:layout_height="@dimen/expanded_bottom_nav_height"
+        android:layout_width="match_parent"
+        android:background="@drawable/component_bottom_navigation"
+        android:elevation="@dimen/elevation_triple"
+        android:scaleX="@dimen/img_bottom_nav_scale"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/padding_margin_double" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/padding_margin_double" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/bottom_nav_actions_left_gap"
+        app:layout_constraintLeft_toLeftOf="@id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/bottom_nav_actions_right_gap"
+        app:layout_constraintLeft_toLeftOf="@id/guideline" />
+</android.support.constraint.ConstraintLayout>

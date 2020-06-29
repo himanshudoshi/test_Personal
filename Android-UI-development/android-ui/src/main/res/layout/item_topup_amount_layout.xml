@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topUpAmountCardConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_margin"
+    android:padding="@dimen/padding_margin_double"
+    android:background="@drawable/background_item_top_up_amount_layout">
+
+    <CheckBox
+        android:id="@+id/topUpAmountCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:button="@drawable/selector_carousel_card_checkbox"
+        android:checked="false"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/topUpAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NMF.Styles.Text.TopUp.AmountTitle"
+
+        android:text="$20"
+
+        app:layout_constraintTop_toBottomOf="@id/topUpAmountCheckbox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/topUpAmountExpiryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NMF.Styles.Text.BigBody.Regular"
+        android:textColor="@android:color/white"
+
+        android:text="Expires in 30 days"
+
+        app:layout_constraintTop_toBottomOf="@id/topUpAmountTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:src="@drawable/icon_logo_voucher_pc_mobile"
+
+        app:layout_constraintLeft_toLeftOf="@id/topUpAmountCheckbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topUpAmountExpiryTextView"/>
+
+</android.support.constraint.ConstraintLayout>

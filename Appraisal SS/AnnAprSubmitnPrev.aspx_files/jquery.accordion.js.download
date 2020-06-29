@@ -1,0 +1,73 @@
+$(document).ready(function () {
+
+    $("#btnAppr").click(function () {
+        alert('test');
+        $("#searchEmp").css("display", "block");
+    });
+
+    $("#savebtn").click(function () {
+        $("#searchEmp").css("display", "none");
+    });
+    $("#demo").on("hide.bs.collapse", function () {
+        $(".btn1").html('<span class="glyphicon glyphicon-plus"></span> Add Goals');
+    });
+    $("#demo").on("show.bs.collapse", function () {
+        $(".btn1").html('<span class="glyphicon glyphicon-minus"></span> Add Goals');
+    });
+
+    $("#demo1").on("hide.bs.collapse", function () {
+        $(".anchor-link1").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo1").on("show.bs.collapse", function () {
+        $(".anchor-link1").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+
+    $("#demo2").on("hide.bs.collapse", function () {
+        $(".anchor-link2").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo2").on("show.bs.collapse", function () {
+        $(".anchor-link2").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+
+    $("#demo3").on("hide.bs.collapse", function () {
+        $(".anchor-link3").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo3").on("show.bs.collapse", function () {
+        $(".anchor-link3").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+
+    $("#demo4").on("hide.bs.collapse", function () {
+        $(".anchor-link4").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo4").on("show.bs.collapse", function () {
+        $(".anchor-link4").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+
+    $("#demo5").on("hide.bs.collapse", function () {
+        $(".anchor-link5").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo5").on("show.bs.collapse", function () {
+        $(".anchor-link5").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+
+    $("#demo6").on("hide.bs.collapse", function () {
+        $(".anchor-link6").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo6").on("show.bs.collapse", function () {
+        $(".anchor-link6").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+
+    $("#demo7").on("hide.bs.collapse", function () {
+        $(".anchor-link7").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo7").on("show.bs.collapse", function () {
+        $(".anchor-link7").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+
+    $("#demo8").on("hide.bs.collapse", function () {
+        $(".anchor-link8").html('<span class="glyphicon glyphicon-plus"></span> ');
+    });
+    $("#demo8").on("show.bs.collapse", function () {
+        $(".anchor-link8").html('<span class="glyphicon glyphicon-minus"></span> ');
+    });
+});

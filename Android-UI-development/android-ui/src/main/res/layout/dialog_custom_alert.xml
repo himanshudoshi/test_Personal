@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/customDialogCloseImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_margin_double"
+
+        android:src="@drawable/icon_close_disc"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/customDialogImageView"
+        android:layout_width="@dimen/image_size_medium"
+        android:layout_height="@dimen/image_size_medium"
+        android:layout_marginTop="@dimen/padding_margin_triple"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customDialogCloseImageView"
+
+        android:src="@drawable/graphic_success_check_mark" />
+
+
+    <TextView
+        android:id="@+id/customDialogMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NMF.Styles.Text.Caption1"
+        android:layout_marginTop="@dimen/padding_margin_triple"
+
+        android:maxLines="1"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customDialogImageView"
+        />
+
+    <TextView
+        android:id="@+id/customDialogHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NMF.Styles.Text.BigBody.SemiBold"
+
+        android:maxLines="1"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customDialogMessageTextView"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

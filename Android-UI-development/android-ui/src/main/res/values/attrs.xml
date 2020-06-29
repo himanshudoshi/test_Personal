@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="cards_scroller">
+        <attr name="viewType" format="enum">
+            <enum name="creditCardsView" value="1"/>
+            <enum name="topUpAmountsView" value="2"/>
+            <enum name="customView" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="bottom_navigation">
+        <attr name="action1Title" format="string"/>
+        <attr name="action2Title" format="string"/>
+        <attr name="action3Title" format="string"/>
+        <attr name="action4Title" format="string"/>
+
+        <attr name="action1Icon" format="reference"/>
+        <attr name="action2Icon" format="reference"/>
+        <attr name="action3Icon" format="reference"/>
+        <attr name="action4Icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ban_details">
+        <attr name="billRef" format="string"/>
+        <attr name="billAmount" format="string"/>
+        <attr name="dueDate" format="string"/>
+        <attr name="primaryButtonText" format="string">@string/pay_now</attr>
+        <attr name="secondaryButtonText" format="string">@string/view_bill</attr>
+    </declare-styleable>
+    
+</resources>

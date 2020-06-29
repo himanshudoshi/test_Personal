@@ -1,0 +1,160 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="VirginAppTheme" parent="NMF.Styles.Defaults.Theme">
+        <!-- App main style should not define or override any other  property unless needed -->
+    </style>
+
+    <style name="NMF.Styles.Defaults.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <!-- TEXT STYLES -->
+    <style name="NMF.Styles.Defaults.Text.Regular" parent="NMF.Styles.Defaults.Theme">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/roboto_regular</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="NMF.Styles.Text.BigBody.Regular" parent="NMF.Styles.Defaults.Text.Regular">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="NMF.Styles.Text.BigBody.Medium" parent="NMF.Styles.Text.BigBody.Regular">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="NMF.Styles.Text.BigBody.SemiBold" parent="NMF.Styles.Text.BigBody.Regular">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/dark_text_color</item>
+    </style>
+
+    <style name="NMF.Styles.Text.BodyCopy.Regular" parent="NMF.Styles.Defaults.Text.Regular">
+        
+    </style>
+
+    <style name="NMF.Styles.Text.BodyCopy.Medium" parent="NMF.Styles.Text.BodyCopy.Regular">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="NMF.Styles.Text.Caption1" parent="NMF.Styles.Defaults.Text.Regular">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="NMF.Styles.Text.Caption2" parent="NMF.Styles.Defaults.Text.Regular">
+        <item name="android:textSize">@dimen/text_size_smallest</item>
+    </style>
+
+
+    <!-- BRANDED TEXT STYLES-->
+    <style name="NMF.Styles.Text.Branded.Default" parent="NMF.Styles.Defaults.Text.Regular">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="NMF.Styles.Text.Branded.Title1" parent="NMF.Styles.Text.Branded.Default">
+        <item name="android:textSize">@dimen/branded_title1_text_size</item>
+    </style>
+
+    <style name="NMF.Styles.Text.Branded.Title2" parent="NMF.Styles.Text.Branded.Default">
+        <item name="android:textSize">@dimen/branded_title2_text_size</item>
+    </style>
+
+    <style name="NMF.Styles.Text.Branded.Title3" parent="NMF.Styles.Text.Branded.Default">
+        <item name="android:textSize">@dimen/branded_title3_text_size</item>
+    </style>
+
+
+
+    <style name="NMF.Styles.Text.TopBar.Title" parent="NMF.Styles.Text.BigBody.SemiBold">
+        <item name="android:textSize">@dimen/top_bar_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="NMF.Styles.Text.TopBar.SubTitle" parent="NMF.Styles.Text.BigBody.Regular">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="NMF.Styles.Text.TopUp.AmountTitle" parent="NMF.Styles.Text.BigBody.SemiBold">
+        <item name="android:textSize">89sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="NMF.Styles.Text.TitleFab" parent="NMF.Styles.Text.Caption2">
+        <item name="android:textColor">@color/bottom_nav_title_text_color</item>
+        <item name="android:elevation">@dimen/elevation_action_fab</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- BUTTONS -->
+    <style name="NMF.Styles.Defaults.Button" parent="NMF.Styles.Defaults.Text.Regular">
+        <item name="android:background">@drawable/primary_button_background</item>
+        <item name="android:height">@dimen/button_height</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">@dimen/padding_margin</item>
+        <item name="android:paddingBottom">@dimen/padding_margin</item>
+        <item name="android:paddingLeft">@dimen/padding_margin_double</item>
+        <item name="android:paddingRight">@dimen/padding_margin_double</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="NMF.Styles.Button.Primary" parent="NMF.Styles.Defaults.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundTint">@color/link_text_color</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="NMF.Styles.Button.Primary.Inverted" parent="NMF.Styles.Button.Primary">
+        <item name="android:textColor">@color/link_text_color</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+    </style>
+
+    <style name="NMF.Styles.Button.Outlined" parent="NMF.Styles.Defaults.Button">
+        <item name="android:textColor">@color/outline_text_color</item>
+        <item name="android:background">@drawable/outlined_button</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="NMF.Styles.Button.Outlined.Inverted" parent="NMF.Styles.Button.Outlined">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/outlined_button_white_border</item>
+    </style>
+
+    <style name="NMF.Styles.Button.Backgroundless" parent="NMF.Styles.Defaults.Button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/link_text_color</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="NMF.Styles.Button.Backgroundless.Inverted" parent="NMF.Styles.Button.Backgroundless">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="NMF.Styles.Button.DrawerButton" parent="NMF.Styles.Defaults.Button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/link_text_color</item>
+        <item name="android:drawablePadding">@dimen/padding_margin</item>
+    </style>
+
+    <style name="NMF.Styles.FloatingActionButton" parent="NMF.Styles.Defaults.Text.Regular">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:tint">@color/bottom_nav_action_fab_tint_color</item>
+        <item name="android:scaleType">center</item>
+        <item name="elevation">@dimen/elevation_action_fab</item>
+    </style>
+
+    <!-- BOTTOM NAVIGATION VIEW -->
+    <style name="NMF.Styles.BottomNavigationView" parent="NMF.Styles.Defaults.Text.Regular">
+        <item name="android:background">@color/bottom_nav_background_color</item>
+        <item name="android:itemBackground">@color/bottom_nav_background_color</item>
+        <item name="itemIconTint">@drawable/selector_color_bottom_navbar</item>
+        <item name="itemTextColor">@drawable/selector_color_bottom_navbar</item>
+    </style>
+
+</resources>

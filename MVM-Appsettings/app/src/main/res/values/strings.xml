@@ -1,0 +1,223 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">My Application</string>
+
+
+  
+  
+    <string name="my_profile">My profile</string>
+    <string name="store_locator">Store Locator</string>
+    <string name="settings_and_privacy">Settings &amp; Privacy</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="more_menu">More Menu</string>
+    <string name="landing_title">Landing</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_store_locator">StoreLocatorActivity</string>
+
+
+    <!--language app settings strings-->
+  <string name="language">Language</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about_the_app">About the App</string>
+
+    <!--language app settings strings-->
+    <string name="title_privacy_policy">PRIVACY POLICY</string>
+    <string name="title_about_the_app">ABOUT THE APP</string>
+    <!--dummy strings-->
+    <string name="my_profile_welcome_text">Welcome to My profile</string>
+    <string name="landing_welcome_text">Welcome to Landing</string>
+    <string name="store_locator_welcome_text">Welcome to Store locator</string>
+    <string name="add_data_usage">Add data usage</string>
+    <string name="add_travel_usage">Add travel usage</string>
+    <string name="change_tv_channels">Change TV channels</string>
+    <string name="make_a_payment">Make a payment</string>
+    <string name="about_app_content" tools:ignore="StringEscaping">
+
+        "Le matériau est la métaphore. \ N \ n"
+
+        "Une métaphore matérielle est la théorie unificatrice d'un espace rationalisé et d'un système de mouvement."
+        "Le matériau est ancré dans la réalité tactile, inspiré par l'étude du papier et de l'encre,"
+        "technologiquement avancé et ouvert à l'imagination et à la magie. \ n"
+        «Les surfaces et les bords du matériau fournissent des repères visuels ancrés dans la réalité.
+        «L\'utilisation d'attributs tactiles familiers aide les utilisateurs à comprendre rapidement les affordances.
+        "la flexibilité du matériel crée de nouvelles affordances qui dépassent celles du physique"
+        "monde, sans enfreindre les règles de la physique. \ n"
+        "Les principes fondamentaux de la lumière, de la surface et du mouvement sont essentiels pour transmettre le mouvement des objets"
+        "interagir, et exister dans l'espace et en relation les uns avec les autres."
+        "Coutures, divise l'espace et indique les pièces en mouvement. \ n \ n"
+
+        "Audacieux, graphique, intentionnel. \ N \ n"
+
+        "Les éléments fondamentaux de la typographie, des grilles, de l'espace, de l'échelle, de la couleur de la conception,"
+        "et l'utilisation de l'imagerie guide les traitements visuels.Ces éléments font bien plus que s'il vous plaît"
+        "Ils créent de la hiérarchie, du sens et de la mise au point, des choix de couleurs délibérés, bord à bord"
+        "L'imagerie, la typographie à grande échelle, et l'espace blanc intentionnel créent un graphisme audacieux"
+        "interface qui immerge l'utilisateur dans l'expérience. \ n"
+        "L'accent mis sur les actions de l'utilisateur rend la fonctionnalité de base immédiatement apparente et fournit"
+        "waypoints pour l'utilisateur. \ n \ n"
+    <string name="language_selection_button_english">English</string>
+        "Motion donne un sens. \ N \ n"
+
+        "Motion respecte et renforce l'utilisateur en tant que moteur principal Les actions de l'utilisateur principal sont"
+        "points d'inflexion qui initient le mouvement, en transformant l'ensemble du design. \ n"
+        "Toutes les actions se déroulent dans un environnement unique, les objets sont présentés à l'utilisateur sans"
+        "briser la continuité de l'expérience alors même qu'ils se transforment et se réorganisent. \ n"
+        "Le mouvement est significatif et approprié, servant à attirer l'attention et à maintenir la continuité."
+        "La rétroaction est subtile mais claire: les transitions sont ef fi caces mais cohérentes. \ N \ n"
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string name="privacy_policy_content" tools:ignore="StringEscaping">
+"Le matériau est la métaphore. \ N \ n"
+
+        "Une métaphore matérielle est la théorie unificatrice d'un espace rationalisé et d'un système de mouvement."
+        "Le matériau est ancré dans la réalité tactile, inspiré par l'étude du papier et de l'encre,"
+        "technologiquement avancé et ouvert à l'imagination et à la magie. \ n"
+        «Les surfaces et les bords du matériau fournissent des repères visuels ancrés dans la réalité.
+        «L\'utilisation d'attributs tactiles familiers aide les utilisateurs à comprendre rapidement les affordances.
+        "la flexibilité du matériel crée de nouvelles affordances qui dépassent celles du physique"
+        "monde, sans enfreindre les règles de la physique. \ n"
+        "Les principes fondamentaux de la lumière, de la surface et du mouvement sont essentiels pour transmettre le mouvement des objets"
+        "interagir, et exister dans l'espace et en relation les uns avec les autres."
+        "Coutures, divise l'espace et indique les pièces en mouvement. \ n \ n"
+
+        "Audacieux, graphique, intentionnel. \ N \ n"
+
+        "Les éléments fondamentaux de la typographie, des grilles, de l'espace, de l'échelle, de la couleur de la conception,"
+        "et l'utilisation de l'imagerie guide les traitements visuels.Ces éléments font bien plus que s'il vous plaît"
+        "Ils créent de la hiérarchie, du sens et de la mise au point, des choix de couleurs délibérés, bord à bord"
+        "L'imagerie, la typographie à grande échelle, et l'espace blanc intentionnel créent un graphisme audacieux"
+        "interface qui immerge l'utilisateur dans l'expérience. \ n"
+        "L'accent mis sur les actions de l'utilisateur rend la fonctionnalité de base immédiatement apparente et fournit"
+        "waypoints pour l'utilisateur. \ n \ n"
+
+        "Motion donne un sens. \ N \ n"
+
+        "Motion respecte et renforce l'utilisateur en tant que moteur principal Les actions de l'utilisateur principal sont"
+        "points d'inflexion qui initient le mouvement, en transformant l'ensemble du design. \ n"
+        "Toutes les actions se déroulent dans un environnement unique, les objets sont présentés à l'utilisateur sans"
+        "briser la continuité de l'expérience alors même qu'ils se transforment et se réorganisent. \ n"
+        "Le mouvement est significatif et approprié, servant à attirer l'attention et à maintenir la continuité."
+        "La rétroaction est subtile mais claire: les transitions sont ef fi caces mais cohérentes. \ N \ n"
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+
+
+    <!-- Keys for shared Preferences -->
+    <string name="sm_session">SMSession</string>
+    <string name="remember_me">RememberMe</string>
+
+
+
+
+</resources>

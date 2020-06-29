@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomNavigationAction1"
+        android:enabled="true"
+        android:title="" />
+    <item
+        android:id="@+id/bottomNavigationAction2"
+        android:enabled="true"
+        android:title="" />
+    <item
+        android:id="@+id/menuEmpty"
+        android:enabled="true"
+        android:title="" />
+    <item
+        android:id="@+id/bottomNavigationAction3"
+        android:enabled="true"
+        android:title="" />
+    <item
+        android:id="@+id/bottomNavigationAction4"
+        android:enabled="true"
+        android:title="" />
+</menu>

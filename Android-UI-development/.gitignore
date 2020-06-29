@@ -1,0 +1,12 @@
+#Gradle
+.gradle/
+
+#AndroidStudio
+.idea/
+.idea/gradle.xml
+local.properties
+Android-UI.iml
+.idea/misc.xml
+build/
+*.iml
+app/app.iml

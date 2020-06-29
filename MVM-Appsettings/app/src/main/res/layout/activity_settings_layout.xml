@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.settings.view.SettingsActivity">
+
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/languageRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_margin_double"
+        android:layout_marginTop="@dimen/padding_margin_double"
+        android:background="@drawable/shadow"
+        android:padding="@dimen/padding_margin"
+        app:layout_constraintTop_toBottomOf="@id/topbar">
+
+        <TextView
+            android:id="@+id/languageTitleTextView"
+            style="@style/NMF.Styles.Text.BigBody.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_triple"
+            android:layout_marginTop="@dimen/padding_margin_half"
+            android:text="@string/language" />
+
+
+        <TextView
+            android:id="@+id/languageTypeTextView"
+            style="@style/NMF.Styles.Text.BodyCopy.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/languageTitleTextView"
+            android:layout_marginBottom="@dimen/padding_margin_half"
+            android:layout_marginStart="@dimen/padding_margin_triple"
+            android:layout_marginTop="@dimen/padding_margin_half"
+            android:text="@string/selected_language" />
+
+    </RelativeLayout>
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/padding_margin_double"
+        app:layout_constraintTop_toBottomOf="@id/languageRelativeLayout" />
+
+    <RelativeLayout
+        android:id="@+id/bottomRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_margin_double"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toBottomOf="@id/space">
+
+        <TextView
+            android:id="@+id/privacyPolicyTextView"
+            style="@style/NMF.Styles.Text.BigBody.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_triple"
+            android:layout_marginTop="@dimen/padding_margin_triple"
+            android:text="@string/privacy_policy" />
+
+        <View
+            android:id="@+id/secondDividerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_width"
+            android:layout_below="@id/privacyPolicyTextView"
+            android:layout_marginTop="@dimen/padding_margin_triple"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/aboutTheAppTextView"
+            style="@style/NMF.Styles.Text.BigBody.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondDividerView"
+            android:layout_marginBottom="@dimen/padding_margin_triple"
+            android:layout_marginStart="@dimen/padding_margin_triple"
+            android:layout_marginTop="@dimen/padding_margin_triple"
+            android:text="@string/about_the_app" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

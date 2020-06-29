@@ -1,0 +1,33 @@
+1. open project which need to add in Gitlab. 
+2. open GitBash 
+3. git init
+4. git status
+5. git branch -a ( list of branches ).
+6. Add remote name to gitlab
+git remote add origin https://gitlab-nad.techmahindra.com/AB00566772/Android_Transport_Vendor.git      
+7. Add files 
+git add .
+8. commit code to gitlab
+
+git commit -m "message for commit"
+9. git push origin branch name. 
+10. check gitlab and check project. 
+
+Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/spartons.com.koinmvvm-19TSpMBcgMVWnDLccfNktA==/base.apk"],nativeLibraryDirectories=[/data/app/spartons.com.koinmvvm-19TSpMBcgMVWnDLccfNktA==/lib/x86_64, /system/lib64, /vendor/lib64]]
+                           
+8oTqjyUXLr_kCbzLCcmY
+
+
+SSA99 How to build Secure Applications?- 18/04/2018 - Done
+
+SS1431 How to build Secure Applications using TechM's standard tools and guidelines- 17/04/2018  - Done
+SS1369 - 25/09/2018  - Done
+SS1107 - 23/09/2019  - Done
+SSA100  - 25/09/2018  - Done
+SSA24- 18/09/2019     - Done
+
+mockroo
+
+
+https://github.com/himanshudoshi/RoomDemo.git
+
